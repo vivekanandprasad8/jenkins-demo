@@ -11,7 +11,7 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello() {
-        log.info("Received request for /hello endpoint");
+        log.info("Received request for /hello endpoint ");
         return "Hello, World! Welcome to Spring Boot! Now you can run this application and access the /hello endpoint to see this message.";
     }
 }
