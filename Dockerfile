@@ -5,10 +5,10 @@ FROM eclipse-temurin:25-jre
 WORKDIR /app
 
 # 3. Copy the application JAR into the container
-COPY target/myapp.jar app.jar
+COPY target/myapp.jar jekins-springboot-test.jar
 
 # 4. Expose application port
 EXPOSE 8082
 
 # 5. Start the Java application
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "jekins-springboot-test.jar"]
